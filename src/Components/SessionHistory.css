@@ -1,0 +1,119 @@
+/* SessionHistory.css */
+.session-history-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .session-history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .session-history-header h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 300px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+  }
+  
+  .search-container input:focus {
+    outline: none;
+    border-color: #646cff;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    fill: #777;
+  }
+  
+  .sessions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .session-card {
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #eee;
+  }
+  
+  .session-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .session-preview {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  
+  .session-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .session-date {
+    display: flex;
+    align-items: center;
+  }
+  
+  .session-messages {
+    display: flex;
+    align-items: center;
+  }
+  
+  .no-sessions {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: #888;
+    font-size: 16px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .session-history-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    
+    .search-container {
+      width: 100%;
+    }
+    
+    .sessions-grid {
+      grid-template-columns: 1fr;
+    }
+  }

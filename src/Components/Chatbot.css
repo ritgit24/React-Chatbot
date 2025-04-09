@@ -1,0 +1,77 @@
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  .hey{float:right;margin-right:10px;}
+  .heye{float:left;margin-right:10px;}
+  h2{font-size: 35px;}
+    .heteye{margin-left:260px;}
+  .chatbot {
+    width: 1350px;
+    height: 550px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+  }
+  
+  .chat-window {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message {
+    max-width: 70%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    word-wrap: break-word;
+  }
+  
+  .message.user {
+    align-self: flex-end;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .message.bot {
+    align-self: flex-start;
+    background-color: #e9ecef;
+    color: black;
+  }
+  
+  .input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .input-area button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:10px;
+  }
+  
+  .input-area button:hover {
+    background-color: #0056b3;
+  }
